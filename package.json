@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "./node_modules/.bin/webpack | node index.js",
-    "heroku-postbuild": "webpack --progress"
+    "heroku-postbuild": "./node_modules/.bin/webpack --progress"
   },
   "author": "Faheem Alam",
   "license": "ISC",
