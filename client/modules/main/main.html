@@ -1,0 +1,14 @@
+<div class="row justify-content-center" ng-if="$ctrl.paginate.items.length">
+  <div id="vertical-timeline" class="vertical-container dark-timeline center-orientation">
+    <div class="vertical-timeline-block" ng-repeat="node in $ctrl.paginate.items" >
+      <timeline-node node="node"></timeline-node>
+    </div>
+  </div>
+  <div class="m-0 pt-4 pb-4 w-100 text-center"  ng-if="$ctrl.paginate.hasMore">
+    <a class="btn btn-secondary w-50" ng-click="$ctrl.loadMore($event)">Load More</a>
+  </div>
+</div>
+<div  ng-if="$ctrl.paginate.loading" >
+  Loading...
+</div>
+

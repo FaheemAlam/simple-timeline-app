@@ -1,0 +1,16 @@
+<div class="vertical-timeline-icon navy-bg">
+  <i class="fa fa-briefcase"></i>
+</div>
+
+<div class="vertical-timeline-content">
+  <h2>{{$ctrl.node.title}}</h2>
+  <p>
+    {{$ctrl.node.description}}
+  </p>
+  <!--<a href="#" class="btn btn-sm btn-primary"> More info</a>-->
+  <span class="vertical-date">
+      {{$ctrl.node.date | date : 'EEEE'}}
+      <br/>
+      <small>{{$ctrl.node.date | date : 'MMM d, y'}}</small>
+    </span>
+</div>
