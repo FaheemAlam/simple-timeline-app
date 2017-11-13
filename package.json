@@ -4,7 +4,8 @@
   "description": "\"Sample app for showing timeline using angular 1.6\"",
   "main": "app.js",
   "scripts": {
-    "start": "./node_modules/.bin/webpack | node index.js"
+    "start": "./node_modules/.bin/webpack | node index.js",
+    "heroku-postbuild": "webpack --progress"
   },
   "author": "Faheem Alam",
   "license": "ISC",
