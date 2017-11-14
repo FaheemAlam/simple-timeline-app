@@ -8,3 +8,6 @@ Node 6.x.x
 1. Do `npm install`
 2. Then `npm start` to run project
 3. Visit localhost:8080
+
+### DEMO
+https://simple-timeline-app.herokuapp.com/
